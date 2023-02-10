@@ -1,6 +1,6 @@
 const $containerCards = document.getElementById('pokecards-container')
 const $loadingBalls = document.getElementById('loading-balls')
-const baseURL = 'https://pokeapi.co/api/v2/pokemon?offset=2&limit=2'
+const baseURL = 'https://pokeapi.co/api/v2/pokemon?offset=1&limit=2'
 
 
 let isFetching = false

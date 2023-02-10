@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+    font-family: 'Bebas Neue', cursive;
+}
+
 body {
 
 }
@@ -11,24 +16,134 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    background-color: rgb(13, 13, 13);
-    min-height: 100vh;
+    background-color: rgb(12, 12, 12);
+    min-height: 106vh;
+    position: relative;
+    padding-bottom: 10rem;
 }
 
 .logo {
+    margin: 2rem;
+    height: 100px;
+}
 
+.poke-img {
+    height: 200px;
 }
 
 #pokeballs {
     height: 100px;
+
 }
 
+#loading-balls{
+    display: none;
+
+}
+
+.showLoad {
+    display: flex!important;
+    animation: fadeIn 1s ease-in-out forwards;
+    position: absolute;
+    bottom: 10px;
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+
 /* MAGIA JS */
+
+#pokecards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
 .poke-card {
-    background-color: #fafafa;
+    background-color: rgba(255, 255, 255, 0.278);
+    box-shadow: 1px 1px 0px 0px rgb(149, 0, 0);
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    width: 250px;
+    border-radius: 20px;
+    gap: 1rem;
+
 }
+
+/* TYPES */
+
+.types-container {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.types {
+    width: max-content;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    
+}
+
+.poison {
+    background-color: rgba(124, 0, 128, 0.7);
+
+}
+
+.grass {
+    background-color: rgba(0, 128, 0, 0.7)
+}
+
+.fire {
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+.water {
+    background-color: rgba(0, 0, 255, 0.7);
+}
+
+.flying {
+    background-color: rgba(128, 128, 128, 0.7);
+}
+
+.bug {
+    background-color: rgba(178, 145, 36, 0.7);
+}
+
+.normal {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.electric {
+    background-color: rgba(255, 255, 0, 0.7);
+}
+
+/* DESCRIPTION */
+
+.description {
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+
+
+

@@ -1,6 +1,6 @@
 const $containerCards = document.getElementById('pokecards-container')
 const $loadingBalls = document.getElementById('loading-balls')
-const baseURL = 'https://pokeapi.co/api/v2/pokemon?offset=1&limit=4'
+const baseURL = 'https://pokeapi.co/api/v2/pokemon?offset=2&limit=2'
 
 
 let isFetching = false
@@ -10,20 +10,6 @@ const saveInfoAPI = {
 }
 
 
-// const pokeFetch = async (info) => {
-
-//     const requestParam = 'pokemon?offset=2&limit=8'
-
-//     const response = await fetch(baseURL+requestParam)
-//     const data = await response.json()
-
-//     infoAPI.next = data.next
-
-//     data.results.map(item => loadPokemon(item.url))
-
-//     return infoAPI.next
-
-// }
 
 const pokeFetch = async (info) => {
 
@@ -39,6 +25,7 @@ const renderPokes = poke => {
 
     return `
     <div class="poke-card" data_id="${1}">
+        <p class="id-card"># ${id}</p>
         <img src="${sprites.other.home.front_default}" alt="pika" class="poke-img">
         <div style="text-align: center">
             <h2>${name.toUpperCase()}</h2>

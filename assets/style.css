@@ -29,7 +29,7 @@ main {
 }
 
 .poke-img {
-    height: 200px;
+    height: 130px;
 }
 
 #pokeballs {
@@ -83,7 +83,25 @@ main {
     width: 250px;
     border-radius: 20px;
     gap: 1rem;
+    position: relative;
 
+}
+
+.poke-card > * {
+    z-index: 1;
+
+}
+
+/* ID CARD */
+
+.id-card {
+    z-index: 0;
+    position: absolute;
+    top: 5%;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 9rem;
+    color: rgba(0, 0, 0, 0.779);
 }
 
 /* TYPES */
